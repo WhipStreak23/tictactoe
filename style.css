@@ -1,0 +1,26 @@
+.buttonXO {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: Arial;
+    color: black;
+}
+.tableBody {
+    width: 210px;
+    height: 210px;
+    background-color: black; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+.resetButton {
+    width: 80px;
+}
