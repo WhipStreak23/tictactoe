@@ -5,26 +5,78 @@
     <title>Tic-Tac-Toe</title>
     <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
 
 <body>
-<div class="Center">
-    <div id="test" class="tableBody">
-        <button href="" id="A1" onclick="Render('A1')" class="buttonXO"></button>
-        <button href="" id="A2" onclick="Render('A2')" class="buttonXO"></button>
-        <button href="" id="A3" onclick="Render('A3')" class="buttonXO"></button>
-        <button href="" id="B1" onclick="Render('B1')" class="buttonXO"></button>
-        <button href="" id="B2" onclick="Render('B2')" class="buttonXO"></button>
-        <button href="" id="B3" onclick="Render('B3')" class="buttonXO"></button>
-        <button href="" id="C1" onclick="Render('C1')" class="buttonXO"></button>
-        <button href="" id="C2" onclick="Render('C2')" class="buttonXO"></button>
-        <button href="" id="C3" onclick="Render('C3')" class="buttonXO"></button>
+<div class="whiteBox">
+    <div class="dFlex">
+        <div id="buttonDisplay" class="choiceXO">
+            <div class="question">Would you like to start as X or O vs a computer?</div>
+            <br>
+            <input class="choiceButtons" type="button" value='X' onclick="xGame()">
+            <input class="choiceButtons" type="button" value='O' onclick="oGame()">
+            <br>
+            <div class="question">Or play with two players?</div>
+            <br>
+            <input class="choiceButtons" type="button" value='Two Players ' onclick="twoPlayer()">
+        </div>
     </div>
+    <div class="displayNone" id="displayNone">
+        <div class="dFlex">
+            <div class="Center2">
+                <div class="ticTitle">Tic-Tac-Toe!</div> 
+                <button class="resetButton" onclick="resetGame()">Reset Game</button>   
+            </div>
+        </div>
+        <div class="Center">
+            <div id="onePlayer" class="tableBody">
+                <button href="" id="A1" onclick="Render('A1')" class="buttonXO"></button>
+                <button href="" id="A2" onclick="Render('A2')" class="buttonXO"></button>
+                <button href="" id="A3" onclick="Render('A3')" class="buttonXO"></button>
+                <button href="" id="B1" onclick="Render('B1')" class="buttonXO"></button>
+                <button href="" id="B2" onclick="Render('B2')" class="buttonXO"></button>
+                <button href="" id="B3" onclick="Render('B3')" class="buttonXO"></button>
+                <button href="" id="C1" onclick="Render('C1')" class="buttonXO"></button>
+                <button href="" id="C2" onclick="Render('C2')" class="buttonXO"></button>
+                <button href="" id="C3" onclick="Render('C3')" class="buttonXO"></button>
+            </div>
+        </div>
+        <div class="dFlex">
+            <div class="Center2">
+                <div id="results"></div>        
+            </div>
+        </div>
+    </div>
+    <div class="displayNone2" id="displayNone2">
+        <div class="dFlex">
+            <div class="Center2">
+                <div class="ticTitle">Tic-Tac-Toe!</div> 
+                <button class="resetButton" onclick="resetGame()">Reset Game</button>   
+            </div>
+        </div>
+        <div class="Center">
+            <div id="twoPlayer" class="tableBody">
+                <button href="" id="A12" onclick="twoPlayerRender('A1')" class="buttonXO"></button>
+                <button href="" id="A22" onclick="twoPlayerRender('A2')" class="buttonXO"></button>
+                <button href="" id="A32" onclick="twoPlayerRender('A3')" class="buttonXO"></button>
+                <button href="" id="B12" onclick="twoPlayerRender('B1')" class="buttonXO"></button>
+                <button href="" id="B22" onclick="twoPlayerRender('B2')" class="buttonXO"></button>
+                <button href="" id="B32" onclick="twoPlayerRender('B3')" class="buttonXO"></button>
+                <button href="" id="C12" onclick="twoPlayerRender('C1')" class="buttonXO"></button>
+                <button href="" id="C22" onclick="twoPlayerRender('C2')" class="buttonXO"></button>
+                <button href="" id="C32" onclick="twoPlayerRender('C3')" class="buttonXO"></button>
+            </div>
+            </div> 
+            <div class="dFlex">
+                <div class="Center2">
+                    <div id="results2"></div>        
+                </div>
+            </div>  
+        </div>
+    </div>    
+    <br>
+    
 </div>
-<div id="results"></div>
-
-<button class="resetButton" onclick="resetGame()">Reset Game</button>    
-
 </body>
-
 </html>
