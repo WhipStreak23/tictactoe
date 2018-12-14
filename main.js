@@ -2,7 +2,6 @@
 
 let gameBoard = [];
 let aiArray = ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3'];
-let winCheck = false;
 let x = 0;
 let V = 8;
 
